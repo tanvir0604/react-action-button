@@ -35,9 +35,11 @@
     "license": "MIT",
     "type": "commonjs",
     "description": "A customizable button component for React with support for various styles, sizes, and social media icons. Includes built-in loading state and easy integration with Tailwind CSS. Perfect for use in forms, actions, and social login buttons with configurable variants such as primary, secondary, danger, and more.",
+    "peerDependencies": {
+        "tailwindcss": "^3.0.0"
+    },
     "dependencies": {
         "clsx": "^2.1.1",
-        "lucide-react": "^0.474.0",
         "react": "^19.0.0",
         "react-icons": "^5.4.0",
         "tailwind-merge": "^3.0.1"
