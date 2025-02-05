@@ -1,0 +1,51 @@
+{
+    "name": "react-action-button",
+    "version": "0.0.6",
+    "main": "dist/ActionButton.js",
+    "module": "dist/ActionButton.mjs",
+    "types": "dist/ActionButton.d.ts",
+    "scripts": {
+        "dev": "tsup src/* --format esm,cjs --dts --watch",
+        "build": "tsup src/* --format esm,cjs --dts",
+        "test": "vite"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "react",
+        "button",
+        "action-button",
+        "tailwind-css",
+        "social-media-buttons",
+        "loading-button",
+        "react-components",
+        "custom-button",
+        "responsive-button",
+        "ui-components",
+        "react-tailwind",
+        "react-ui",
+        "button-component",
+        "social-login",
+        "react-social-button"
+    ],
+    "author": "Md Shafkat Hussain Tanvir <tanvir0604@gmail.com>",
+    "repository": "https://github.com/tanvir0604/react-action-button",
+    "bugs": "https://github.com/tanvir0604/react-action-button/issues",
+    "license": "MIT",
+    "type": "commonjs",
+    "description": "A customizable button component for React with support for various styles, sizes, and social media icons. Includes built-in loading state and easy integration with Tailwind CSS. Perfect for use in forms, actions, and social login buttons with configurable variants such as primary, secondary, danger, and more.",
+    "dependencies": {
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.474.0",
+        "react": "^19.0.0",
+        "react-icons": "^5.4.0",
+        "tailwind-merge": "^3.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.8",
+        "tsup": "^8.3.6",
+        "typescript": "^5.7.3",
+        "vite": "^6.0.11"
+    }
+}
