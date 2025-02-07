@@ -30,13 +30,13 @@ yarn add react-action-button
 
 Open the `tailwind.config.ts` file and add the following line to the `content` array:
 
-```
+```js
 content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-+   "./node_modules/react-action-button/**/*.{js,jsx,ts,tsx}",
-]
+    +"./node_modules/react-action-button/dist/**/*.{js,ts,jsx,tsx}",
+];
 ```
 
 ## Usage Example
@@ -54,6 +54,7 @@ export default function App() {
     return (
         <div>
             <ActionButton
+                type={ButtonTypes.button}
                 variant={ButtonVariants.primary}
                 size={ButtonSizes.large}
                 onClick={() => alert("Clicked!")}
@@ -62,6 +63,17 @@ export default function App() {
             </ActionButton>
 
             <ActionButton
+                type={ButtonTypes.button}
+                variant={ButtonVariants.primary}
+                outline={true}
+                size={ButtonSizes.large}
+                onClick={() => alert("Clicked!")}
+            >
+                Outline Button
+            </ActionButton>
+
+            <ActionButton
+                type={ButtonTypes.button}
                 platform={SocialVariants.facebook}
                 size={ButtonSizes.medium}
                 onClick={() => alert("Facebook Button Clicked!")}
@@ -70,6 +82,7 @@ export default function App() {
             </ActionButton>
 
             <ActionButton
+                type={ButtonTypes.button}
                 loading={true}
                 loadingText="Please wait..."
                 size={ButtonSizes.small}
@@ -78,6 +91,7 @@ export default function App() {
             </ActionButton>
 
             <ActionButton
+                type={ButtonTypes.button}
                 platform={SocialVariants.twitter}
                 variant={ButtonVariants.accent}
                 size={ButtonSizes.medium}
@@ -86,6 +100,7 @@ export default function App() {
             </ActionButton>
 
             <ActionButton
+                type={ButtonTypes.button}
                 platform={SocialVariants.linkedin}
                 variant={ButtonVariants.danger}
                 loading={true}
@@ -138,6 +153,14 @@ export default function App() {
     -   `accent`: Pink background with white text.
     -   `ghost`: Transparent background with gray text and border.
     -   `link`: Text link button with blue text and underline.
+
+### `outline` (Outline Design)
+
+-   **Type**: `Boolean`
+-   **Default**: `false`
+-   **Description**: Defines the outline style of the button.
+    -   `true`: Outline button style.
+    -   `false`: Default button style.
 
 ### `loading` (boolean)
 

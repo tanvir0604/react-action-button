@@ -1,6 +1,6 @@
 {
     "name": "react-action-button",
-    "version": "0.0.7",
+    "version": "0.0.9",
     "main": "dist/ActionButton.js",
     "module": "dist/ActionButton.mjs",
     "types": "dist/ActionButton.d.ts",
@@ -41,7 +41,6 @@
     "dependencies": {
         "clsx": "^2.1.1",
         "react": "^19.0.0",
-        "react-icons": "^5.4.0",
         "tailwind-merge": "^3.0.1"
     },
     "devDependencies": {
