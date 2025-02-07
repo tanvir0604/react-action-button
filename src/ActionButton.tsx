@@ -103,7 +103,7 @@ interface ActionButtonProps {
     onClick?: () => void;
 }
 
-export default function ActionButton({
+export function ActionButton({
     children,
     className,
     platform = SocialVariants.none,

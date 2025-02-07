@@ -24,12 +24,27 @@ yarn add react-action-button
 -   `clsx`
 -   `tailwind-merge`
 -   `react-icons`
+-   `tailwind-css`
+
+## Nextjs Integration for tailwindcss
+
+Open the `tailwind.config.ts` file and add the following line to the `content` array:
+
+```
+content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
++   "./node_modules/react-action-button/**/*.{js,jsx,ts,tsx}",
+]
+```
 
 ## Usage Example
 
 ```tsx
 import React from "react";
-import ActionButton, {
+import {
+    ActionButton,
     ButtonVariants,
     SocialVariants,
     ButtonSizes,
