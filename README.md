@@ -15,6 +15,12 @@ npm install react-action-button
 or
 
 ```bash
+pnpm add react-action-button
+```
+
+or
+
+```bash
 yarn add react-action-button
 ```
 
