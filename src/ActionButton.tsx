@@ -36,23 +36,23 @@ export enum SocialVariants {
 const ButtonStyles = {
     none: "",
     default: "bg-gray-200 text-black hover:bg-gray-300",
-    primary: "bg-blue-500 text-white hover:bg-blue-600",
-    secondary: "bg-gray-600 text-white hover:bg-gray-700",
-    danger: "bg-red-500 hover:bg-red-600 text-white",
-    accent: "bg-pink-500 text-white hover:bg-pink-600",
-    ghost: "bg-transparent text-gray-700 hover:bg-gray-200 border border-gray-300",
-    link: "text-blue-500 underline hover:text-blue-600",
+    primary: "bg-primary text-primary-foreground hover:bg-primary/90",
+    secondary: "bg-secondary text-secondary-foreground hover:secondary/80",
+    danger: "bg-destructive hover:destructive/90 text-destructive-foreground",
+    accent: "bg-accent text-accent-foreground hover:accent/80",
+    ghost: "bg-transparent hover:bg-gray-200 border border-gray-300",
+    link: "text-primary underline hover:text-primary/80",
 };
 
 const OutlineButtonStyles = {
     none: "",
-    default: "border border-gray-400 text-black hover:bg-gray-100",
-    primary: "border border-blue-500 text-blue-500 hover:bg-blue-50",
-    secondary: "border border-gray-600 text-gray-600 hover:bg-gray-100",
-    danger: "border border-red-500 text-red-500 hover:bg-red-50",
-    accent: "border border-pink-500 text-pink-500 hover:bg-pink-50",
-    ghost: "border border-gray-300 text-gray-700 hover:bg-gray-100",
-    link: "text-blue-500 underline hover:text-blue-600", // Link stays the same
+    default: "border border-gray-400 hover:bg-gray-100",
+    primary: "border border-primary hover:primary/90",
+    secondary: "border border-secondary hover:bg-secondary/80",
+    danger: "border border-destructive hover:destructive/90",
+    accent: "border border-accent hover:bg-accent/80",
+    ghost: "border border-gray-300 hover:bg-gray-100",
+    link: "text-primary underline hover:text-primary/80", // Link stays the same
 };
 
 const IconSizeMapping = {
