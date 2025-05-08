@@ -184,7 +184,7 @@ export function ActionButton({
             disabled={loading}
             type={type}
             className={cn(
-                "flex items-center justify-center gap-2 whitespace-nowrap rounded-md",
+                "flex items-center justify-center gap-2 whitespace-nowrap rounded-md cursor-pointer",
                 outline
                     ? OutLineSocialButtonStyles[platform]
                     : SocialButtonStyles[platform],
