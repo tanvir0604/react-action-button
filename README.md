@@ -174,6 +174,12 @@ export default function App() {
 -   **Default**: `false`
 -   **Description**: If `true`, the button shows a loading state instead of the button's text. The `loadingText` and `loadingIcon` props control the text and icon displayed during loading.
 
+### `disabled` (boolean)
+
+-   **Type**: `boolean`
+-   **Default**: `false`
+-   **Description**: If `true`, the button will be on disabled state.
+
 ### `type` (ButtonTypes)
 
 -   **Type**: `ButtonTypes`

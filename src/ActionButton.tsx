@@ -158,6 +158,7 @@ interface ActionButtonProps {
     size?: ButtonSizes;
     loadingText?: string;
     loadingIcon?: JSX.Element;
+    disabled?: boolean;
     onClick?: () => void;
 }
 
@@ -170,6 +171,7 @@ export function ActionButton({
     loading = false,
     type = ButtonTypes.button,
     size = ButtonSizes.medium,
+    disabled = false,
     loadingText = "Loading...",
     loadingIcon = (
         <span
@@ -181,7 +183,7 @@ export function ActionButton({
     return (
         <button
             onClick={onClick}
-            disabled={loading}
+            disabled={disabled ?? loading}
             type={type}
             className={cn(
                 "flex items-center justify-center gap-2 whitespace-nowrap rounded-md cursor-pointer",
