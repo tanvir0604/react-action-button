@@ -1,6 +1,6 @@
 {
     "name": "react-action-button",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "dist/ActionButton.js",
     "module": "dist/ActionButton.mjs",
     "types": "dist/ActionButton.d.ts",
